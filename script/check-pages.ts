@@ -11,7 +11,8 @@ for (const content of ['Wuttichai Sukantho', 'profile-readme', 'ADot', 'May 2024
 assert.ok(html.includes('https://wuttichaisukantho.github.io/wuttichai.github.io'));
 assert.ok(!html.includes('firebaseapp.com'), 'Stale Firebase canonical URL');
 for (const match of html.matchAll(/(?:src|href)="(\/[^"?#]*)(?:[?#][^"]*)?"/g)) {
-  const url = match[1]!;
+  const url = match[1];
+  assert.ok(url);
   assert.ok(url.startsWith(base), `Asset or route escapes the Pages base: ${url}`);
   assert.ok(
     existsSync(path.join(output, decodeURIComponent(url.slice(base.length)))),
@@ -19,6 +20,6 @@ for (const match of html.matchAll(/(?:src|href)="(\/[^"?#]*)(?:[?#][^"]*)?"/g)) 
   );
 }
 assert.ok(existsSync(path.join(output, '.nojekyll')));
-console.log(
-  'Pages checks passed: prerendered profile, both timelines, canonical URL and local assets.',
+process.stdout.write(
+  'Pages checks passed: prerendered profile, both timelines, canonical URL and local assets.\n',
 );

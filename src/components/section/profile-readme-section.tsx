@@ -78,13 +78,21 @@ export const ProfileReadmeSection = observer(() => {
         </figcaption>
         <img
           src="/wuttichai.github.io/profile/architecture.svg"
-          alt={thai ? 'แหล่งข้อมูลเข้าสู่การสร้างเว็บไซต์ GitHub Pages ให้บริการ React และสถานะ MobX ภายในเบราว์เซอร์' : 'Content sources feed the static build. GitHub Pages serves React with local MobX interactions.'}
+          alt={
+            thai
+              ? 'แหล่งข้อมูลเข้าสู่การสร้างเว็บไซต์ GitHub Pages ให้บริการ React และสถานะ MobX ภายในเบราว์เซอร์'
+              : 'Content sources feed the static build. GitHub Pages serves React with local MobX interactions.'
+          }
           width={960}
-          height={810}
+          height={640}
           loading="lazy"
           className="mx-auto h-auto w-full max-w-3xl rounded-xl"
         />
-        <a href="/wuttichai.github.io/profile/architecture.mmd" download className="mt-4 inline-block text-primary underline underline-offset-4">
+        <a
+          href="/wuttichai.github.io/profile/architecture.mmd"
+          download
+          className="mt-4 inline-block text-primary underline underline-offset-4"
+        >
           {thai ? 'ดาวน์โหลด Mermaid' : 'Download Mermaid source'}
         </a>
       </figure>

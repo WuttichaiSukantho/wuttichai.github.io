@@ -51,7 +51,7 @@ No Firebase credentials are needed. Keep secrets, `node_modules`, and build outp
 
 [Architecture](docs/ARCHITECTURE.md) contains the Mermaid diagram.
 Edit `docs/architecture.json`; the exported source is `public/profile/architecture.mmd`.
-The site displays a static structural SVG preview generated from the same data, with no
+The site displays a static SVG companion illustrating the same connections, with no
 client-side Mermaid dependency. JSON Schema and the Mermaid skill's static lint validate
-the source; the SVG preview is not evidence of native Mermaid renderer acceptance.
+the source; the SVG companion is not evidence of native Mermaid renderer acceptance.
 The original profile Mermaid diagrams and ASCII remain in `PROFILE.md`.
