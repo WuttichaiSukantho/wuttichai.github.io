@@ -1,0 +1,17 @@
+flowchart TB
+  accTitle: How this portfolio works
+  accDescr: App, profile README and live-site content feed the static build. GitHub Pages serves React, whose interactions use local MobX state.
+  app["Portfolio app"]
+  profile["GitHub profile"]
+  live["Live-site content"]
+  build["Vite + TanStack prerender"]
+  pages["GitHub Pages"]
+  react["React in the browser"]
+  state["Local MobX state"]
+  app --> build
+  profile --> build
+  live -->|Reviewed content| build
+  build -->|Static files| pages
+  pages --> react
+  react -->|Interactions| state
+%% portable-canonical-v2:eyJhY2Nlc3NpYmlsaXR5IjoiQXBwLCBwcm9maWxlIFJFQURNRSBhbmQgbGl2ZS1zaXRlIGNvbnRlbnQgZmVlZCB0aGUgc3RhdGljIGJ1aWxkLiBHaXRIdWIgUGFnZXMgc2VydmVzIFJlYWN0LCB3aG9zZSBpbnRlcmFjdGlvbnMgdXNlIGxvY2FsIE1vYlggc3RhdGUuIiwiZGF0YSI6eyJkaXJlY3Rpb24iOiJUQiIsImVkZ2VzIjpbeyJmcm9tIjoiYXBwIiwidG8iOiJidWlsZCJ9LHsiZnJvbSI6InByb2ZpbGUiLCJ0byI6ImJ1aWxkIn0seyJmcm9tIjoibGl2ZSIsImxhYmVsIjoiUmV2aWV3ZWQgY29udGVudCIsInRvIjoiYnVpbGQifSx7ImZyb20iOiJidWlsZCIsImxhYmVsIjoiU3RhdGljIGZpbGVzIiwidG8iOiJwYWdlcyJ9LHsiZnJvbSI6InBhZ2VzIiwidG8iOiJyZWFjdCJ9LHsiZnJvbSI6InJlYWN0IiwibGFiZWwiOiJJbnRlcmFjdGlvbnMiLCJ0byI6InN0YXRlIn1dLCJub2RlcyI6W3siaWQiOiJhcHAiLCJsYWJlbCI6IlBvcnRmb2xpbyBhcHAifSx7ImlkIjoicHJvZmlsZSIsImxhYmVsIjoiR2l0SHViIHByb2ZpbGUifSx7ImlkIjoibGl2ZSIsImxhYmVsIjoiTGl2ZS1zaXRlIGNvbnRlbnQifSx7ImlkIjoiYnVpbGQiLCJsYWJlbCI6IlZpdGUgKyBUYW5TdGFjayBwcmVyZW5kZXIifSx7ImlkIjoicGFnZXMiLCJsYWJlbCI6IkdpdEh1YiBQYWdlcyJ9LHsiaWQiOiJyZWFjdCIsImxhYmVsIjoiUmVhY3QgaW4gdGhlIGJyb3dzZXIifSx7ImlkIjoic3RhdGUiLCJsYWJlbCI6IkxvY2FsIE1vYlggc3RhdGUifV19LCJkZXNjcmlwdGlvbiI6bnVsbCwiaWQiOiJwb3J0Zm9saW9fYXJjaGl0ZWN0dXJlIiwia2luZCI6ImZsb3djaGFydCIsInNvdXJjZVNoYTI1NiI6ImIxZjgyMjkwODViNTgyOTVhNjgzMmViMTE0YzI5NDBhYjMyN2FhYmU0Y2ViOTE2ZGFlNDljOWZiYmRjZDI4ZDkiLCJzdHlsZXMiOltdLCJ0aXRsZSI6IkhvdyB0aGlzIHBvcnRmb2xpbyB3b3JrcyIsInZlcnNpb24iOjF9

@@ -1,0 +1,6 @@
+dist/
+node_modules/
+.env*
+bun.lock
+prisma/schema.prisma
+src/generated/

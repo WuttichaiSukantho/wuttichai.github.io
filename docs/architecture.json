@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "title": "Portfolio architecture",
+  "description": "Source content is combined at build time. Browser interactions stay local.",
+  "diagrams": [
+    {
+      "id": "portfolio_architecture",
+      "title": "How this portfolio works",
+      "kind": "flowchart",
+      "accessibility": "App, profile README and live-site content feed the static build. GitHub Pages serves React, whose interactions use local MobX state.",
+      "data": {
+        "direction": "TB",
+        "nodes": [
+          { "id": "app", "label": "Portfolio app" },
+          { "id": "profile", "label": "GitHub profile" },
+          { "id": "live", "label": "Live-site content" },
+          { "id": "build", "label": "Vite + TanStack prerender" },
+          { "id": "pages", "label": "GitHub Pages" },
+          { "id": "react", "label": "React in the browser" },
+          { "id": "state", "label": "Local MobX state" }
+        ],
+        "edges": [
+          { "from": "app", "to": "build" },
+          { "from": "profile", "to": "build" },
+          { "from": "live", "to": "build", "label": "Reviewed content" },
+          { "from": "build", "to": "pages", "label": "Static files" },
+          { "from": "pages", "to": "react" },
+          { "from": "react", "to": "state", "label": "Interactions" }
+        ]
+      }
+    }
+  ]
+}
