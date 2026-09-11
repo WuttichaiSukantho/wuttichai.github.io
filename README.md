@@ -55,3 +55,7 @@ The site displays a static SVG companion illustrating the same connections, with
 client-side Mermaid dependency. JSON Schema and the Mermaid skill's static lint validate
 the source; the SVG companion is not evidence of native Mermaid renderer acceptance.
 The original profile Mermaid diagrams and ASCII remain in `PROFILE.md`.
+
+## License
+
+[ISC](LICENSE) © 2026 Wuttichai Sukantho.

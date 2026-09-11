@@ -1,5 +1,7 @@
 {
   "name": "wuttichai.github.io",
+  "description": "Bilingual developer portfolio for Wuttichai Sukantho, built with React, TypeScript, and TanStack Start for GitHub Pages.",
+  "license": "ISC",
   "version": "0.2.3",
   "private": true,
   "type": "module",
