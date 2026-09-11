@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" fill="none" role="img" aria-labelledby="flow-title flow-desc">
+  <title id="flow-title">Application flow: Client to API to Data</title>
+  <desc id="flow-desc">A TypeScript client connects to a REST and WebSocket API, which connects to PostgreSQL and Redis. Blue and teal signals move between the three layers.</desc>
+  <defs>
+    <linearGradient id="flow-background" x1="0" y1="0" x2="900" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117" />
+      <stop offset="1" stop-color="#0D1117" />
+    </linearGradient>
+    <linearGradient id="flow-track" x1="250" y1="104" x2="650" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58A6FF" />
+      <stop offset="1" stop-color="#3FB9A8" />
+    </linearGradient>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .still-signal { display: none; }
+      @media (prefers-reduced-motion: reduce) {
+        .moving-signal { display: none; }
+        .still-signal { display: inline; }
+      }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="188" rx="20" fill="url(#flow-background)" stroke="#30363D" />
+  <text x="30" y="32" fill="#8B949E" font-size="11" font-weight="600" letter-spacing="2">APPLICATION FLOW</text>
+  <text x="870" y="32" text-anchor="end" fill="#8B949E" font-size="11">Web · API · Storage</text>
+
+  <path d="M250 104H340M560 104H650" stroke="url(#flow-track)" stroke-width="2" stroke-opacity="0.45" />
+  <path d="M331 99L337 104L331 109M641 99L647 104L641 109" stroke="#7B9FB6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <g class="moving-signal">
+    <circle cx="294" cy="104" r="4" fill="#58A6FF">
+      <animate attributeName="cx" values="259;328" dur="2.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.88;1" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="604" cy="104" r="4" fill="#3FB9A8">
+      <animate attributeName="cx" values="569;638" dur="2.8s" begin="1.4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.88;1" dur="2.8s" begin="1.4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g class="still-signal">
+    <circle cx="294" cy="104" r="4" fill="#58A6FF" />
+    <circle cx="604" cy="104" r="4" fill="#3FB9A8" />
+  </g>
+
+  <g>
+    <rect x="30" y="57" width="220" height="94" rx="14" fill="#161B22" stroke="#2B415C" />
+    <rect x="47" y="75" width="36" height="36" rx="10" fill="#1C3451" />
+    <path d="M59 85L53 92L59 99M71 85L77 92L71 99M67 84L63 100" stroke="#7DBAFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="97" y="98" fill="#F0F6FC" font-size="21" font-weight="600">Client</text>
+    <text x="48" y="131" fill="#A6B2C0" font-size="13">TypeScript</text>
+    <circle cx="231" cy="74" r="3" fill="#58A6FF" />
+  </g>
+
+  <g>
+    <rect x="340" y="57" width="220" height="94" rx="14" fill="#161B22" stroke="#2B4C5D" />
+    <rect x="357" y="75" width="36" height="36" rx="10" fill="#1B3B49" />
+    <path d="M375 82L384 87V98L375 103L366 98V87Z" stroke="#71CFE0" stroke-width="1.7" stroke-linejoin="round" />
+    <circle cx="375" cy="92.5" r="3" stroke="#71CFE0" stroke-width="1.5" />
+    <text x="407" y="98" fill="#F0F6FC" font-size="21" font-weight="600">API</text>
+    <text x="358" y="131" fill="#A6B2C0" font-size="13">REST + WebSocket</text>
+    <circle cx="541" cy="74" r="3" fill="#67C8DC" />
+  </g>
+
+  <g>
+    <rect x="650" y="57" width="220" height="94" rx="14" fill="#161B22" stroke="#28534F" />
+    <rect x="667" y="75" width="36" height="36" rx="10" fill="#153D3B" />
+    <ellipse cx="685" cy="85" rx="9" ry="4" stroke="#5CE3CA" stroke-width="1.7" />
+    <path d="M676 85V99C676 104.3 694 104.3 694 99V85M676 92C676 97.3 694 97.3 694 92" stroke="#5CE3CA" stroke-width="1.7" />
+    <text x="717" y="98" fill="#F0F6FC" font-size="21" font-weight="600">Data</text>
+    <text x="668" y="131" fill="#A6B2C0" font-size="13">PostgreSQL + Redis</text>
+    <circle cx="851" cy="74" r="3" fill="#3FB9A8" />
+  </g>
+
+  <text x="450" y="173" text-anchor="middle" fill="#8B949E" font-size="11">Clear boundaries. Reliable communication.</text>
+</svg>

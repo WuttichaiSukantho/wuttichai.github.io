@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">How this portfolio works</title>
+  <desc id="desc">The portfolio app, GitHub profile and reviewed live-site content feed Vite and TanStack prerendering. GitHub Pages serves static files to React in the browser, with local MobX interaction state.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="90"><path d="M0 0L10 5L0 10Z" fill="#60a5fa"/></marker>
+  </defs>
+  <rect width="960" height="640" rx="24" fill="#0b1220"/>
+  <g fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M170 116V152H480V194"/>
+    <path d="M480 116V194"/>
+    <path d="M790 116V152H480V194"/>
+    <path d="M480 266V320"/>
+    <path d="M480 392V446"/>
+    <path d="M480 518V556"/>
+  </g>
+  <g fill="#17263d" stroke="#395577" stroke-width="1.5">
+    <rect x="40" y="44" width="260" height="72" rx="14"/>
+    <rect x="350" y="44" width="260" height="72" rx="14"/>
+    <rect x="660" y="44" width="260" height="72" rx="14"/>
+    <rect x="250" y="194" width="460" height="72" rx="14"/>
+    <rect x="250" y="320" width="460" height="72" rx="14"/>
+    <rect x="250" y="446" width="460" height="72" rx="14"/>
+    <rect x="300" y="556" width="360" height="54" rx="14"/>
+  </g>
+  <g fill="#eff6ff" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="21" font-weight="600">
+    <text x="170" y="88">Portfolio app</text>
+    <text x="480" y="88">GitHub profile</text>
+    <text x="790" y="88">Live-site content</text>
+    <text x="480" y="238">Vite + TanStack prerender</text>
+    <text x="480" y="364">GitHub Pages</text>
+    <text x="480" y="490">React in the browser</text>
+    <text x="480" y="591">Local MobX state</text>
+  </g>
+  <g fill="#93b4df" font-family="Segoe UI, sans-serif" font-size="16">
+    <text x="506" y="177">Reviewed content</text>
+    <text x="506" y="300">Static files</text>
+    <text x="506" y="548">Interactions</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+# Wuttichai Sukantho
+
+> Wuttichai Sukantho (วุฒิชัย สุคันโซ), also known as Bomb, is the person represented by this public portfolio.
+
+Wuttichai Sukantho is a software developer in Thailand focused on TypeScript, backend systems, APIs, and maintainable web applications.
+The same public profile may also be recognized as Wuttichai Sukanto or by the Thai nickname บอม.
+
+## Main pages
+
+- [Home](https://wuttichaisukantho.github.io/wuttichai.github.io/): profile overview and current technical focus.
+- [Playground](https://wuttichaisukantho.github.io/wuttichai.github.io/#playground): interactive character, item, collision, and leaderboard systems.
+- [About](https://wuttichaisukantho.github.io/wuttichai.github.io/#about-hero): developer background and technical interests.
+- [Experience](https://wuttichaisukantho.github.io/wuttichai.github.io/#experience): public work and education timeline entries.
+- [Education](https://wuttichaisukantho.github.io/wuttichai.github.io/#education): academic milestones.
+- [Profile Stats](https://wuttichaisukantho.github.io/wuttichai.github.io/#profile-stats): counts derived from the public profile data.
+- [Tech Stack](https://wuttichaisukantho.github.io/wuttichai.github.io/#tech-stack): technologies and architecture used by this website.
+- [Contact](https://wuttichaisukantho.github.io/wuttichai.github.io/#contact): public social and professional profiles.
+
+## Technical profile
+
+- TypeScript, React, Bun, Elysia, PostgreSQL, Prisma, Redis, and Docker.
+- Backend development, API engineering, system architecture, and maintainable web applications.
+- The site uses React, TanStack Start, TanStack Router, MobX, Framer Motion, Tailwind CSS, and GitHub Pages.
+
+## Content policy
+
+This file summarizes public portfolio content. The website is the canonical source for the latest profile details.

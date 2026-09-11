@@ -1,0 +1,5 @@
+{
+  "routeTreeFileHeader": ["/* This file is auto-generated */"],
+  "routesDirectory": "./src/routes",
+  "generatedRouteTree": "./src/routeTree.gen.ts"
+}
